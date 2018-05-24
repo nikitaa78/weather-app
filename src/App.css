@@ -35,7 +35,7 @@ body {
   color: #1f2833;
 }
 
-.title-container__title {
+/*.title-container__title {
   font-size: 50px;
   letter-spacing: 2px;
   line-height: 1.3;
@@ -48,8 +48,11 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
   font-family: "Merriweather", serif;
+}*/
+.weather-containter p {
+  background: rgba(170, 187, 97, 0.5);
+  font-size: 15px;
 }
-
 .form-container {
   background-color: #e85a4f;
   /*background-color: #2c3e50;*/
@@ -57,6 +60,7 @@ body {
   padding-top: 100px;
   padding-left: 50px;
 }
+
 
 input[type="text"] {
   background-color: transparent;
@@ -104,7 +108,7 @@ button:active {
   outline: none;
 }
 
-.weather__info {
+/*.weather__info {
   width: 60%;
   font-size: 40px;
   font-weight: 200;
@@ -134,4 +138,4 @@ button:active {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 200;
-}
+}*/
