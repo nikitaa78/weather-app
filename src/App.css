@@ -95,6 +95,11 @@ button {
   font-weight: 100;
 }
 
+#clearButton {
+  position: absolute;
+  right:100px;
+}
+
 button:active {
   outline: none;
 }

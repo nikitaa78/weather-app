@@ -2,6 +2,7 @@ import React from "react";
 import Titles from "./components/Titles";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
+import Clear from "./components/Clear"
 
 const API_KEY = "d5eb815a1067132eb8d7c2eeb7d86a02";
 
@@ -43,6 +44,18 @@ class App extends React.Component {
     }
   }
 
+
+  cancelCourse = () => { 
+    this.setState({
+      temperature: undefined,
+      city: undefined,
+      country: undefined,
+      humidity: undefined,
+      description: undefined,
+      error: undefined
+    });
+  }
+
   render() {
     return (
       <div>
@@ -56,19 +69,29 @@ class App extends React.Component {
 
                 <div className="col-xs-7 form-container">
                   <Form getWeather={this.getWeather}/>
-                  <Weather 
-                    temperature={this.state.temperature}
-                    city={this.state.city}
-                    country={this.state.country}
-                    humidity={this.state.humidity}
-                    description={this.state.description}
-                    error={this.state.error}
-                    />
+                    <div className = "row">
+                      <div className="col-xs-8 weather-containter">
+                        <Weather 
+                          temperature={this.state.temperature}
+                          city={this.state.city}
+                          country={this.state.country}
+                          humidity={this.state.humidity}
+                          description={this.state.description}
+                          error={this.state.error}
+                        />
+                      </div>
+
+                      <div className="col-xs-4 clear-container">
+                        <Clear cancelCourse={this.cancelCourse}/> 
+                      </div>
+                    </div>
+                <div> 
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
