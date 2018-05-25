@@ -1,3 +1,8 @@
+Weather App
+Link at: https://nikitaa78.github.io/weather-app/ 
+(**note**: due to api being called over http, must allow unsafe scripts to run when using the 'Get Weather!' feature)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
