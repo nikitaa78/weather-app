@@ -35,6 +35,19 @@ body {
   color: #1f2833;
 }
 
+.title-container h1 {
+  background: rgba(242, 238, 238, 0.15);
+  border-radius: 15px;
+  padding-top: 15px;
+  font-size: 50px;
+}
+
+.title-container p {
+  background: rgba(242, 238, 238, 0.15);
+  font-size: 20px;
+  font-weight: bold;
+}
+
 /*.title-container__title {
   font-size: 50px;
   letter-spacing: 2px;
